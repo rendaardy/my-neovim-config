@@ -86,6 +86,7 @@ return packer.startup(function(use)
   use 'watzon/vim-edge-template'
   use 'wakatime/vim-wakatime'
   use 'mhartington/formatter.nvim'
+  use 'nkrkv/nvim-treesitter-rescript'
 
   if packer_bootstrap then
     packer.sync()
