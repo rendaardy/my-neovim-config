@@ -119,7 +119,7 @@ mason_lspconfig.setup({
     ensure_installed = {
         'tsserver',
         'denols',
-        'sumneko_lua',
+        'lua_ls',
         'rust_analyzer',
     }
 })
