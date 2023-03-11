@@ -179,7 +179,7 @@ mason_lspconfig.setup_handlers({
                     }
                 }
             })
-        elseif server_name == 'sumneko_lua' then
+        elseif server_name == 'lua_ls' then
             lspconfig[server_name].setup({
                 on_attach = on_attach,
                 capabilities = capabilities,
