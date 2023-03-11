@@ -87,6 +87,17 @@ return packer.startup(function(use)
   use 'wakatime/vim-wakatime'
   use 'mhartington/formatter.nvim'
   use 'nkrkv/nvim-treesitter-rescript'
+  use {
+      'jackMort/ChatGPT.nvim',
+      config = function ()
+        require('chatgpt').setup({})
+      end,
+      requires = {
+          'MunifTanjim/nui.nvim',
+          'nvim-lua/plenary.nvim',
+          'nvim-telescope/telescope.nvim',
+      }
+  }
 
   if packer_bootstrap then
     packer.sync()
